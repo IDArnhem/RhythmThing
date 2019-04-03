@@ -1,0 +1,11 @@
+- Can I combine the scripts ConnonBallLooks and DetectorScript 
+into one so that all behaviours associated with a CannonBall 
+are all in the same script?
+
+- I want the CannonBall to be destroyed when an explosion happens
+
+- Checkout ProBuilder in-engine 3D modeller: https://www.youtube.com/watch?v=PUSOg5YEflM
+
+## Brainstorming
+
+- 
