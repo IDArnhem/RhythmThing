@@ -8,6 +8,7 @@
 
 The easiest and "free" way of doing this is to use Github. Follow these steps:
 
+- install unity 2018.11f1 (And don't expect that a unity version close to that number will also work!)
 - install the Unity Github package http://unity.github.com
 - import it as a plugin into your project
 - you will also need `git-lfs`, which you can install in your mac using Homebrew, like this: `brew install git-lfs`
