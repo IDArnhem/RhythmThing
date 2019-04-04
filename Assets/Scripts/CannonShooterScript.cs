@@ -20,7 +20,7 @@ public class CannonShooterScript : MonoBehaviour
 	}
 	
 	void Update () { 
-		//prediction code here
+		//prediction code here -> exrersize for the reader
 		//get the current speed and direction to where the target is moving
 		//calculate the time it takes the projectile to travel to its location. formula: t = [V * sin(α) + √(V * sin(α))² + 2 * g * h)] / g
 		//set the angle for the cannon in the future
