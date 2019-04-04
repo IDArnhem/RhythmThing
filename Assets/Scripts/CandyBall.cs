@@ -32,13 +32,12 @@ public class CandyBall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		DestroyCannonBall();
     }
 
-    public bool DestroyCannonBall() {
+    void DestroyCannonBall() {
         if(this.transform.position.y <= -20) {
-            return true;
-        } else {
-            return false;
+			Destroy(this.gameObject);
         }
     } // destroy
 
