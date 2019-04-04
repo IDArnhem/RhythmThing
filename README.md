@@ -1,6 +1,6 @@
 ## RhythmThing
 
-This is a game built during the Unity Evenings at ArtEZ Arnhem by a group of students and some teachers that were interesting in going deeper into Unity.
+This is a game built during the Unity Evenings at ArtEZ Arnhem by a group of students and some teachers that were interested in going deeper into Unity.
 
 ![sshot](docs/imgs/RhythmThing-earlybird.png)
 
