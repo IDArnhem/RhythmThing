@@ -1,6 +1,7 @@
 ## Cool vids for inspiration
 
 - https://www.youtube.com/watch?v=Cp5WWtMoeKg
+- https://www.youtube.com/watch?v=5zbFVfEGwnw Dan Paluska & Dan Lieberman, Absolut comission. Inspiration on the connection between digital and physical.
 
 
 ## Collaborating in a Unity project
