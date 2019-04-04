@@ -16,7 +16,7 @@ The easiest and "free" way of doing this is to use Github. Follow these steps:
 - create a branch with your name, that will create a development line just for you that will hopefully not affect the work of others
 - happy hacking!
 
-## Cool vids for inspiration
+## Some inspiration
 - https://www.youtube.com/watch?v=Ha2dC7se8yA - DIGGART ballsy melody machine
 - https://www.youtube.com/watch?v=U2E0qdlOCr8 - "Modular Synth / Bouncing Balls Meditation", Michael Klier
 - https://www.youtube.com/watch?v=3j7-X1_jItg - DIGGART three synths
