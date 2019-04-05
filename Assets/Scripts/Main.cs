@@ -46,8 +46,8 @@ public class Main : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(rotateTheCannons){
-			if(RotateAmount >= 0){
-				var rotateSpeed = 80 * Time.deltaTime;
+			if(RotateAmount >= 180){
+				var rotateSpeed = 360/AmountOfCannons * Time.deltaTime;
 				transform.RotateAround(this.transform.position, Vector3.up, rotateSpeed);
 				RotateAmount -= rotateSpeed;
 			}else{
@@ -58,9 +58,22 @@ public class Main : MonoBehaviour {
 	}
 
 	void OnCannonGoingToShoot(Vector3 pos){
-		RotateAmount = Vector3.SignedAngle(pos, TargetLocShootingCannon, this.transform.position);
-		if(RotateAmount >= 5){
+		RotateAmount = Vector3.SignedAngle(TargetLocShootingCannon, pos, this.transform.position);
+		// float angle = Vector3.Angle( pos, TargetLocShootingCannon );
+		// float sign = Mathf.Sign( Vector3.Dot(TargetLocShootingCannon, Vector3.Cross( pos, TargetLocShootingCannon ) ) );
+		RotateAmount += 180;
+		
+		Debug.Log(RotateAmount);
+
+		if(RotateAmount >= 185){
 			rotateTheCannons = true;
+		}else{
+			RotateAmount = 180;
 		}
 	}
+
+// 	public static float SignedAngle( Vector3 from, Vector3 to, Vector3 normal )
+// {
+    
+// }
 }
