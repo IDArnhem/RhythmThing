@@ -6,6 +6,10 @@
 [Ll]ogs/
 [Pp]lugins/
 
+Assets/Library.meta
+Assets/Github*
+Assets/Github/
+
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # [Aa]ssets/AssetStoreTools*
 
