@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CandyBall : MonoBehaviour
 {
+    public OSC oscref;
 
     public Color CannonballColor;
     public int LightIntensity, LightRange;
@@ -59,6 +60,16 @@ public class CandyBall : MonoBehaviour
 
     private void DoExplode(GameObject collided, Vector3 impact) {
         var explosion = Instantiate( Resources.Load("Effects/FX_Explosion"), impact, Quaternion.identity );
+        OscDispatchExplosion();
+    }
+
+    void OscDispatchExplosion() {
+        OscMessage message = new OscMessage();
+        message.address = "/exploded";
+        message.values.Add(transform.position.x);
+        message.values.Add(transform.position.y);
+        message.values.Add(transform.position.z);
+        oscref.Send(message);
     }
 
 } // clas

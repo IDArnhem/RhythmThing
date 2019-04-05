@@ -7,7 +7,8 @@ public class CannonShooterScript : MonoBehaviour
 {
     public Transform target;
     private GameObject bullet;
-    
+    public OSC oscref;
+
     public float power;
 
     [Range(0, 90)]
@@ -73,6 +74,11 @@ public class CannonShooterScript : MonoBehaviour
     void ShootBullet() {
         soundfx.Play();
         bullet = Object.Instantiate( Resources.Load("CandyBall"), this.transform.position, Quaternion.identity ) as GameObject;
+
+        CandyBall cb = bullet.GetComponent<CandyBall>();
+        cb.oscref = this.oscref;
+        Debug.Log("CandyBall.oscref = " + cb.oscref.ToString());
+
         var targetdist = Vector3.Distance(this.transform.position, target.position);
         
         var ballbody = bullet.GetComponent<Rigidbody>();

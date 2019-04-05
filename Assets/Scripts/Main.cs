@@ -8,6 +8,8 @@ public class Main : MonoBehaviour {
     public GameObject reference;
     public Transform target;
 
+    public OSC oscref;
+
     public float radius;
     public int count;
 
@@ -31,6 +33,8 @@ public class Main : MonoBehaviour {
             var placing = this.transform.position + pos; //new Vector3(0, 0, i * 2);
             var cannon = Object.Instantiate(reference, placing, Quaternion.identity );
             var cs = cannon.GetComponent<CannonShooterScript>();
+            cs.oscref = this.oscref;
+//            Debug.Log( "CannonShooter.." + cs.oscref );
             cs.keystroke = Config.controlKeys[i];
             cs.target = this.target;
             //cs.power = Random.Range(8, 20);
