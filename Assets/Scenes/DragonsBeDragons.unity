@@ -32,13 +32,13 @@ RenderSettings:
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
-  m_DefaultReflectionMode: 0
+  m_DefaultReflectionMode: 1
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 1.075196, g: 0.7250982, b: 0.96191436, a: 1}
+  m_IndirectSpecularColor: {r: 1.5839849, g: 0.7250982, b: 1.3173828, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -309,7 +309,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1399119863}
   - component: {fileID: 1399119862}
-  - component: {fileID: 1399119861}
   m_Layer: 0
   m_Name: Main
   m_TagString: Untagged
@@ -317,18 +316,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1399119861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1399119860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 665798d2765674f90abd16f99325efee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1399119862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,7 +328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5f3c0e7eac14b99a7331d31c3ad9dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CannonReference: {fileID: 7840400316672040776, guid: d82414c73ea3e4b8693e1394bc1c6dd2,
+  CannonReference: {fileID: 6837346580069566866, guid: d82414c73ea3e4b8693e1394bc1c6dd2,
     type: 3}
   AlignToPoint: {fileID: 1249116613}
   AmountOfCannons: 12
@@ -357,9 +344,9 @@ MonoBehaviour:
   - j
   - k
   - l
-  - l
-  - l
-  - l
+  - z
+  - x
+  - c
   CannonTargets:
   - {fileID: 1330487124}
 --- !u!4 &1399119863

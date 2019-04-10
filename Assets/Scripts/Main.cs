@@ -61,15 +61,16 @@ public class Main : MonoBehaviour {
 		RotateAmount = Vector3.SignedAngle(TargetLocShootingCannon, pos, this.transform.position);
 		// float angle = Vector3.Angle( pos, TargetLocShootingCannon );
 		// float sign = Mathf.Sign( Vector3.Dot(TargetLocShootingCannon, Vector3.Cross( pos, TargetLocShootingCannon ) ) );
-		RotateAmount += 180;
+		Debug.Log(RotateAmount);
+		// RotateAmount += 180;
 		
 		Debug.Log(RotateAmount);
 
-		if(RotateAmount >= 185){
-			rotateTheCannons = true;
-		}else{
-			RotateAmount = 180;
-		}
+		// if(RotateAmount >= 5){
+		// 	rotateTheCannons = true;
+		// }else{
+		// 	RotateAmount = 0;
+		// }
 	}
 
 // 	public static float SignedAngle( Vector3 from, Vector3 to, Vector3 normal )

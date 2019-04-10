@@ -49,7 +49,7 @@ public class CannonShooterScript : MonoBehaviour
 
 	void shootCannonBall(HVDist distances){
 		CannonSounds.Play();
-		var CannonBall = Instantiate(Resources.Load("CandyBall"), this.transform.position, Quaternion.identity) as GameObject;
+		var CannonBall = Instantiate(Resources.Load("Objects/CandyBall"), this.transform.position, Quaternion.identity) as GameObject;
 		var PhysicsProperties = CannonBall.GetComponent<Rigidbody>();
 
 		float RadiansAngle = Angle * Mathf.PI/180;
