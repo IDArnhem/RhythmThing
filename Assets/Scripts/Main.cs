@@ -13,6 +13,8 @@ public class Main : MonoBehaviour {
     public float radius;
     public int count;
 
+    public List<GameObject> AllCannons;
+
     // public string serialPort;
     // public string serialDataRate;
 
@@ -23,6 +25,8 @@ public class Main : MonoBehaviour {
     {
         float ainc = ((2f * Mathf.PI) / count);  // angular increment to form circle
 
+        AllCannons = new List<GameObject>();
+
         for(int i = 0; i < count; i++) {
             // calculate position in a circular array of "count" objects
             var pos = new Vector3();
@@ -31,7 +35,10 @@ public class Main : MonoBehaviour {
 
             // add that position to the empty in the center
             var placing = this.transform.position + pos; //new Vector3(0, 0, i * 2);
+
             var cannon = Object.Instantiate(reference, placing, Quaternion.identity );
+            AllCannons.Add( cannon );
+
             var cs = cannon.GetComponent<CannonShooterScript>();
             cs.oscref = this.oscref;
 //            Debug.Log( "CannonShooter.." + cs.oscref );
